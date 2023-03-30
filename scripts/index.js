@@ -78,18 +78,20 @@ window.confirm("Are you above 18 yrs?");
 // window.location.replace("https://www.twitter.com");
 
 let input='';
-while(input== ''){
+while(input=== ''){
+    
     input= prompt('please eneter your age');
 
-    if(!isNaN(input)){
-        console.log("invalid input");}
-    else{
+    if(isNaN(input)){
+        window.alert("invalid input");}
+    
         if(input<18){
-            console.log("sorry kid u're note old");
+            window.alert("sorry kid u're note old");
         }
         else{
-            console.log("welcome!");
+            window.alert("welcome!");
         }
-    }
+
 }
+
 
